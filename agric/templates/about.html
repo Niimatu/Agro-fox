@@ -1,0 +1,136 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="html,css,javascript">
+    <meta name="robot" content="index.follow">
+    <meta name="description" content="Where agriculture is brought to life">
+    <title>About</title>
+    <link rel="stylesheet" href="{% static 'about1.css' %}">
+    <link rel="shortcut icon" href="agrofox/images/farm.jpg" type="image/x-icon">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <h2>AgroFox</h2>
+        </div>
+        <ul class="nav-links">
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="{% url 'services' %}">services</a></li>
+            <li><a href="{% url 'farmers' %}">farmers</a></li>
+            <li><a href="#">contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    <div id="main">
+        <div class="container">
+            <div class="child">
+                <img src="../static/images/tractor2.jpg" alt="">
+            </div>
+            <div class="child">
+                <h2 class="big">Land provision made possible for farmers and for agricultural purpose.</h2>
+                <p class="point"> To provide suitable farm land for crop prodution and agricultural transformation in nigeria at large..</p>
+            </div>
+            <div class="content">
+                <h3>What you should know about AgriFox</h3>
+                <p>Here at AgriFox we provide to farmers and also to agriculture businesses best land that suite for agricultural purpose. particularly areas of land can be utilized by humans in different ways, this can include Residential, Institutional,
+                    Industral, Agricultural etc.
+                    <p>Our goal at agrifox is to provide suitable farm land best for agricultural production. because a good farm or ranching business relies on good planing and which makes land ownership the number one target, thats why we at agrifox have
+                        made it easy for you as farmers or Agricultural business owners when it comes to land provision. </p>
+                </p>
+                <br>
+                <p>When its timefor you to decide on which type of land that is required for the specified agricultural purpose you wish to go into all that is required of you is to navigate to the farmers page and apply to us and feedbck would be sent to
+                    you as so as possible. </p>
+                <p>we support farmers agriculture NGOs and government in nigeria that are seeking a suitable farmland and agricultural transformation so as to create economic growth and job opportunities.</p>
+            </div>
+            <div id="glassmorphism">
+                <div class="box">
+                    <div class="box-content">
+                        <h3>OUR MISSION</h3>
+                        <p>To provide lands and agricultural transformation for individuals and businesses to achieve short to long term goal while facilitating impactful growth
+                        </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-content">
+                        <h3>OUR VISION</h3>
+                        <p>To be the foremost agricultural land providing platform, where farmers and top agro businesses invest to increase agricultural transformation and land use qualities in nigeria. </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-content">
+                        <h3>OUR VALUE</h3>
+                        <p>To become the platform that is repected and recognised when it comes to land provision for land use purpose or agricultural production.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer-left">
+                <h3> How can we serve you in the future</h3>
+                <textarea name="massage" id="" cols="30" rows="10" placeholder="message"></textarea>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam </p>
+                <div class="social">
+                    <a href="#"><img src="../static/images/facebook.jpg" alt="socail media image"></a>
+                    <a href="#"><img src="../static/images/instagram.jpg" alt="socail media image"></a>
+                    <a href="#"><img src="../static/images/telegram.jpg" alt="socail media image"></a>
+                    <a href="#"><img src="../static/images/whatsapp.jpg" alt="socail media image"></a>
+                    <a href="#"><img src="../static/images/linkedin.jpg" alt="socail media image"></a>
+                    <a href="#"><img src="../static/images/26.jpg.jpg" alt="socail media image"></a>
+                </div>
+            </div>
+            <ul class="footer-right">
+                <li>
+                    <h3>Farms</h3>
+                    <ul class="box">
+                        <li><a href="#">home</a></li>
+                        <li><a href="#">about</a></li>
+                        <li><a href="#">services</a></li>
+                        <li><a href="#">development</a></li>
+                        <li><a href="#">contact</a></li>
+                    </ul>
+                </li>
+                <li class="features">
+                    <h3>userful-link</h3>
+                    <ul class="box">
+                        <li><a href="#">hiehf'iehfi</a></li>
+                        <li><a href="#">jhufhd</a></li>
+                        <li><a href="#">ogrugfu</a></li>
+                        <li><a href="#">hbfufheoifjol</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>Address</h3>
+                    <ul class="box">
+                        <li><a href="#">No.334 Agrotext roaad</a></li>
+                        <li><a href="#">Phase 5 along crush cafe </a></li>
+                        <li><a href="#">Lagos street</a></li>
+                        <li><a href="#">Abuja</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="footer-bottom">
+                <p> we make you dream as a farmer come to pass </p>
+                <p> All right reserved by &copy; AgriFox limited </p>
+            </div>
+        </footer>
+
+
+
+
+
+        <script src="{% static 'about.js' %}"></script>
+</body>
+
+</html>

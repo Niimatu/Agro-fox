@@ -1,0 +1,59 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="html,css,javascript">
+    <meta name="robot" content="index.follow">
+    <meta name="description" content="Where agriculture is brought to life">
+    <title>services</title>
+    <link rel="stylesheet" href="{% static 'services.css' %}">
+    <link rel="shortcut icon" href="agrofox/images/farm.jpg" type="image/x-icon">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <h2>AgroFox</h2>
+        </div>
+        <ul class="nav-links">
+            <li><a href="{% url 'about' %}">about</a></li>
+            <li><a href="{% url 'services' %}">services</a></li>
+            <li><a href="{% url 'farmers' %}">farmers</a></li>
+            <li><a href="#">developments</a></li>
+            <li><a href="#">contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="split left">
+            <h1>land provision</h1>
+            <a href="{% url 'lands' %}" class="btn">Learn more</a>
+        </div>
+        <div class="split right">
+            <h1>cultivation</h1>
+            <a href="{% url 'lands' %}" class="btn">Learn more</a>
+        </div>
+    </div>
+    <br>
+    <section id="main">
+
+
+
+        </div>
+    </section>
+
+    <script src="{% static 'script.js' %}"></script>
+    <script src="{% static 'services.js' %}"></script>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+{% load static %} {% load crispy_forms_tags %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="html,css,javascript">
+    <meta name="robot" content="index.follow">
+    <meta name="description" content="Where agriculture is brought to life">
+    <title>farmers</title>
+    <link rel="stylesheet" href="{% static 'farmers.css' %}">
+    <link rel="shortcut icon" href="agrofox/images/farm.jpg" type="image/x-icon">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <h2>AgroFox</h2>
+        </div>
+        <ul class="nav-links">
+            <li><a href="{% url 'about' %}">about</a></li>
+            <li><a href="{% url 'services' %}">services</a></li>
+            <li><a href="{% url 'farmers' %}">farmers</a></li>
+            <li><a href="#">developments</a></li>
+            <li><a href="#">contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    </div>
+    <section id="main">
+        <div class="backg">
+        </div>
+        <div class="container">
+            <div class="sub-con">
+                <p class="con-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam labore expedita nemo iste asperiores, facilis dolore quaerat distinctio deserunt eligendi facere laudantium magni? Impedit atque autem sint vero, maxime vitae. Voluptate
+                    quidem corrupti dolorem, labore impedit harum iure reiciendis odit tempore tempora vero deserunt provident facilis commodi quos voluptas optio.</p>
+            </div>
+            <div class="sub-con" id="right">
+                <img src="{% static 'images/farm1 svg.jpg' %}" alt="image">
+            </div>
+            <div class="sub-con" id="right">
+                <img src="{% static 'images/farm.jpg' %}" alt="image">
+            </div>
+            <div class="sub-con">
+                <p class="con-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam labore expedita nemo iste asperiores, facilis dolore quaerat distinctio deserunt eligendi facere laudantium magni? Impedit atque autem sint vero, maxime vitae. Voluptate
+                    quidem corrupti dolorem, labore impedit harum iure reiciendis odit tempore tempora vero deserunt provident facilis commodi quos voluptas optio.</p>
+            </div>
+            <div class="sub-con">
+                <p class="con-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam labore expedita nemo iste asperiores, facilis dolore quaerat distinctio deserunt eligendi facere laudantium magni? Impedit atque autem sint vero, maxime vitae. Voluptate
+                    quidem corrupti dolorem, labore impedit harum iure reiciendis odit tempore tempora vero deserunt provident facilis commodi quos voluptas optio.</p>
+            </div>
+            <div class="sub-con" id="right">
+                <img src="{% static 'images/tools.jpg' %}" alt="image">
+            </div>
+            <div class="farm">
+                <form action="" method="post" enctype="multipart/form-data">{% csrf_token %} {{ form|crispy}}
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+
+    </section>
+
+
+
+    <script src="{% static 'farmers.js' %}"></script>
+</body>
+
+</html>

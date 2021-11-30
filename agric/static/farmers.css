@@ -1,0 +1,182 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+nav{
+    width: 100%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 10vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: #3f7919;
+    position: fixed;
+    z-index: 100;
+}
+.logo{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 16px;
+}
+.nav-links{
+    display:flex;
+    width: 20%;
+}
+.nav-links li{
+    list-style: none;
+    border: 1px solid transparent;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: .5s;
+}
+.nav-links a{
+    color: rgb(216, 212, 212);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    /* font-weight: bold; */
+    font-size:16px;
+    padding:15px 5px;
+    
+    
+}  
+li:hover{
+    border-bottom: 1px solid #cce;
+    border-radius: 5px;
+    transform:translate(2%);
+}
+   /* section */
+   section{
+    background: rgb(247, 236, 236);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+ /* burger */
+ 
+.burger{
+    display: none; /* to hide the burger icon*/
+}
+.burger div{
+    width: 30px;
+    height: 3px;
+    margin: 5px;
+    background: rgb(216, 212, 212);
+
+}
+@media screen and (max-width:1024px) {
+    .nav-links{
+        width: 50%;
+    }
+}
+@media screen and (max-width:768px) {
+    body{
+        overflow-x: hidden;
+        /* background:rgb(224, 159, 192); */
+    }
+    
+    .text{
+        font-size: 20px;
+        flex-direction: column;
+    }
+    /* nav{
+        position: fixed;
+        width: 100%;
+    } */
+    .nav-links{
+        width: 100%;
+        position: absolute;
+        right: 0px;
+        top: 10vh;
+        height: 50vh;
+        line-height: 50px;
+        background: #050505;
+        z-index: 100;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: 0.5s ease-in;
+        transform: translateX(100%); /* moves the sidebar dropdown away*/
+        overflow: hidden;
+    }
+    .nav-links li{
+        opacity: 0;
+    }
+    .nav-active{
+        transform: translateX(0%);
+    }
+    .burger{
+        display: block;
+        cursor: pointer;
+    }
+}
+@keyframes navLinkfade{
+    from{
+        opacity: 0;
+        transform: translateX(50%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+} 
+
+#main{
+    background: cornsilk;
+    flex-wrap: wrap;
+    display: flex;
+  
+}
+ .backg {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    background-image: linear-gradient( rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(images/drone.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 80%;
+    width: 80%;
+    background:#fff;
+    margin: auto;
+    text-align: justify;
+    overflow: hidden;
+ } 
+ .sub-con{
+     width: 50%;
+     display: flex;
+     position: relative;
+     float: left;
+     padding: 0 50px;
+     overflow: hidden;
+
+ }
+
+.con-text{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 100px 2px;
+    text-align: justify;
+    
+
+}
+/* form section   */
+
+
+    
+
+

@@ -1,0 +1,160 @@
+{% load static %}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="{% static 'lands.css' %}" />
+    <title>Vertical Slider</title>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <h2>AgroFox</h2>
+        </div>
+        <ul class="nav-links">
+            <li><a href="{% url 'index' %}">home</a></li>
+            <li><a href="{% url 'about' %}">about</a></li>
+            <li><a href="{% url 'services' %}">services</a></li>
+            <li><a href="{% url 'farmers' %}">farmers</a></li>
+            <li><a href="#">contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    <div class="slider-container">
+        <div class="left-slide">
+            <div style="background-color: #fff">
+                <h1>Factory Production</h1>
+                <p>Lands suitable for factories and finishing of raw materials</p>
+            </div>
+            <div style="background-color: #fff">
+                <h1>Wildlife Conservation</h1>
+                <p>Lands suitable for Wildlife Conservation</p>
+            </div>
+            <div style="background-color: #fff">
+                <h1>Livestock Production</h1>
+                <p>Lands suitable for rearing of Livestock</p>
+            </div>
+            <div style="background-color: #fff">
+                <h1>Crop Production</h1>
+                <p>Lands suitable for food crop and land crop production</p>
+            </div>
+        </div>
+        <div class="right-slide">
+            <div style="background-image: url('../static/images/land.jpg')"></div>
+            <div style="background-image: url('../static/images/hybrids13.jpg')"></div>
+            <div style="background-image: url('../static/images/bio7.jpg')"></div>
+            <div style="background-image: url('../static/images/tractor2.jpg')"></div>
+        </div>
+        <div class="action-buttons">
+            <button class="down-button">
+          <!-- <img src="good.png.png" alt=""> -->
+        </button>
+            <button class="up-button">
+          <i class="fas fa-arrow-up"></i>
+        </button>
+        </div>
+    </div>
+    <section id="main">
+        <div id="glassmorphism">
+            <div class="box">
+                <div class="box-content">
+                    <h3>Crop Production</h3>
+                    <p>All of the hybrid seeds planted by the farmer will produce similar plants, while the seeds of the next generation from those hybrids will not consistently have the desired characteristics.</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-content">
+                    <h3>Livestock Production</h3>
+                    <p>Conventional control strategies, such as cultural methods and biocide applications against insects vectors, have only limited success at mitigating the impact of plant viruses.</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="box-content">
+                    <h3>Wildlife Conservation</h3>
+                    <p>It respond to insect attack by upregulating the expression of PIs in plant which interfere with protein digestion,resulting in growth retardation or death of the insect pest.</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-content">
+                    <h3>Industrallization</h3>
+                    <p>Conventional control strategies, such as cultural methods and biocide applications against insects vectors, have only limited success at mitigating the impact of plant viruses.</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="box-content">
+                    <h3>Land Alocation</h3>
+                    <p>It respond to insect attack by upregulating the expression of PIs in plant which interfere with protein digestion,resulting in growth retardation or death of the insect pest.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="footer-left">
+            <h3> How can we serve you in the future</h3>
+            <textarea name="massage" id="" cols="30" rows="10" placeholder="message"></textarea>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam </p>
+            <div class="social">
+                <a href="#"><img src="../static/images/facebook.jpg" alt="socail media image"></a>
+                <a href="#"><img src="../static/images/instagram.jpg" alt="socail media image"></a>
+                <a href="#"><img src="../static/images/telegram.jpg" alt="socail media image"></a>
+                <a href="#"><img src="../static/images/whatsapp.jpg" alt="socail media image"></a>
+                <a href="#"><img src="../static/images/linkedin.jpg" alt="socail media image"></a>
+                <a href="#"><img src="../static/images/26.jpg.jpg" alt="socail media image"></a>
+            </div>
+        </div>
+        <ul class="footer-right">
+            <li>
+                <h3>Farms</h3>
+                <ul class="box">
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">services</a></li>
+                    <li><a href="#">development</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </li>
+            <li class="features">
+                <h3>userful-link</h3>
+                <ul class="box">
+                    <li><a href="#">hiehf'iehfi</a></li>
+                    <li><a href="#">jhufhd</a></li>
+                    <li><a href="#">ogrugfu</a></li>
+                    <li><a href="#">hbfufheoifjol</a></li>
+                </ul>
+            </li>
+            <li>
+                <h3>Address</h3>
+                <ul class="box">
+                    <li><a href="#">No.334 Agrotext roaad</a></li>
+                    <li><a href="#">Phase 5 along crush cafe </a></li>
+                    <li><a href="#">Lagos street</a></li>
+                    <li><a href="#">Abuja</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="footer-bottom">
+            <p> we make you dream as a farmer come to pass </p>
+            <p> All right reserved by &copy; AgriFox limited </p>
+        </div>
+    </footer>
+
+    <script src="{% static 'script1.js' %}"></script>
+    <script src="{% static 'script2.js' %}"></script>
+</body>
+
+</html>
